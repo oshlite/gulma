@@ -125,6 +125,7 @@ body {
     gap: 20px;
     justify-content: center;
     margin-bottom: 25px;
+    flex-direction: column;
 }
 
 .logo-circle {
@@ -156,7 +157,7 @@ body {
 }
 
 .logo-text-wrapper {
-    text-align: left;
+    text-align: center;
 }
 
 .logo-main {
@@ -167,6 +168,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 5px;
+    align-items: center;
 }
 
 .logo-sub {
@@ -255,7 +257,7 @@ body {
 }
 
 .secondary-card {
-    background: linear-gradient(135deg, var(--accent-color) 0%, #ff9500 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, #FFD700 100%);
     border-color: var(--secondary-color);
 }
 
@@ -266,13 +268,13 @@ body {
 }
 
 .tertiary-card {
-    background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
-    border-color: #9CA3AF;
+    background: linear-gradient(135deg,var(--primary-color) 0%, #A6CE39 100%);
+    border-color: #A6CE39;
 }
 
 .tertiary-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(107, 114, 128, 0.3);
+    box-shadow: 0 16px 40px #A6CE39;
     border-color: #D1D5DB;
 }
 
@@ -471,7 +473,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .footer-links span {
@@ -574,5 +576,81 @@ body {
 
     .stat-number {
         font-size: 24px;
+    }
+}
+
+/* ========== FOOTER STYLING ========== */
+.footer-section {
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-message {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(166, 206, 57, 0.1);
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(166, 206, 57, 0.3);
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+
+    .footer-message {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
     }
 }
