@@ -3,57 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GulmaTrack - Hub</title>
+    <title>GulmaTrack - Sistem Manajemen Hasil Pertanian</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <!-- Header -->
+    <div class="wrapper">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="container">
+            <!-- Header Section -->
             <div class="header">
-                <div class="logo-circle">
-                    <span class="logo-text">GT</span>
+                <div class="logo-wrapper">
+                    <div class="logo-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text-wrapper">
+                        <h1 class="logo-main">GulmaTrack</h1>
+                        <p class="logo-sub">Sistem Manajemen Pertanian</p>
+                    </div>
                 </div>
-                <h1 class="title">GulmaTrack</h1>
-                <p class="subtitle">Manage Your Projects & Files</p>
+                <p class="header-desc">Kelola hasil pertanian Anda dari lahan hingga distribusi</p>
             </div>
 
-            <!-- Links Section -->
-            <div class="links-section">
-                <!-- Link 1: Web -->
-                <a href="https://gulmatrack-web.example.com" class="link-card web-card" target="_blank">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <!-- Main Links Section -->
+            <div class="links-container">
+                <!-- Primary Link: Web App -->
+                <a href="https://gulmatrack.com" class="link-card primary-card" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <div class="card-icon icon-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="2" y1="20" x2="22" y2="20"></line>
+                            </svg>
+                        </div>
+                        <div class="card-badge primary">Utama</div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Platform GulmaTrack</h2>
+                        <p class="card-desc">Akses dashboard lengkap untuk mengelola pertanian Anda</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-link">Buka Platform</span>
+                        <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </div>
-                    <h2 class="card-title">Web Application</h2>
-                    <p class="card-desc">Akses platform gulmatrack</p>
-                    <span class="card-arrow">→</span>
                 </a>
 
-                <!-- Link 2: Drive -->
-                <a href="https://drive.google.com/drive/folders/gulmatrack" class="link-card drive-card" target="_blank">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                <!-- Secondary Link: Drive -->
+                <a href="https://drive.google.com/drive/folders/gulmatrack" class="link-card secondary-card" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <div class="card-icon icon-secondary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="card-badge secondary">File</div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Google Drive</h2>
+                        <p class="card-desc">Akses dokumentasi, laporan, dan file proyek</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-link">Buka Drive</span>
+                        <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </div>
-                    <h2 class="card-title">Google Drive</h2>
-                    <p class="card-desc">Koleksi file & dokumen</p>
-                    <span class="card-arrow">→</span>
                 </a>
+
+                <!-- Tertiary Link: Docs -->
+                <a href="#" class="link-card tertiary-card" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <div class="card-icon icon-tertiary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="19" x2="12" y2="5"></line>
+                                <line x1="9" y1="12" x2="15" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="card-badge tertiary">Docs</div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Dokumentasi</h2>
+                        <p class="card-desc">Panduan lengkap penggunaan sistem GulmaTrack</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-link">Baca Docs</span>
+                        <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Pengguna Aktif</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Hektar Terkelola</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Dukungan</span>
+                </div>
             </div>
 
             <!-- Footer -->
-            <div class="footer">
-                <p>GulmaTrack © 2026</p>
-                <p class="footer-sub">Your links, your way</p>
-            </div>
+            <footer class="footer">
+                <p class="footer-text">GulmaTrack © 2026 - Sistem Manajemen Hasil Pertanian</p>
+                <div class="footer-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <span>•</span>
+                    <a href="#">Syarat Layanan</a>
+                    <span>•</span>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
